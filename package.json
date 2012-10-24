@@ -1,0 +1,27 @@
+{
+  "author": "Karl Düüna <karl.dyyna@gmail.com>",
+  "name": "easy-pipe",
+  "description": "Helper module for managing spawned system processes",
+  "keywords": [
+    "child process",
+    "spawn",
+    "pipe"
+  ],
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:DeadAlready/node-easy-pipe"
+  },
+  "main": "lib/pipe.js",
+  "dependencies": {},
+  "devDependencies":{
+    "vows":"0.6.x"
+  },
+  "scripts":{
+    "test":"node test/test.js"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}
