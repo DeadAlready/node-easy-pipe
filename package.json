@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git@github.com:DeadAlready/node-easy-pipe"
   },
-  "main": "lib/pipe.js",
+  "main": "index.js",
   "dependencies": {},
   "devDependencies":{
     "vows":"0.6.x"

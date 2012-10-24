@@ -3,4 +3,4 @@
  */
 'use strict';
 
-module.exports = require('./lib/piper');
+module.exports = require('./lib/pipeStream').createPipeStream;
