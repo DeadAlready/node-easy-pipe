@@ -8,7 +8,14 @@ var $p = require('../index');
 var s = require('child_process').spawn('node',['test1.js']);
 var writeS = fs.createWriteStream('test.log');
 
-var a = $p(s).pipe(writeS).pipe('node test2.js').on('data',function(d){
-  assert.equal('data: hello', d.toString('utf8'));
-  assert.equal('hello',fs.readFileSync('test.log','utf8'));
-});
+var a = $p(s)
+  .pipe('node test2.js')
+  .pipe('node test2.js')
+  .on('data',function(d){
+    console.log(d.toString());
+    assert.equal('data: data: hello', d.toString('utf8'));
+  })
+  .first()
+  .on('data', function(d){
+    console.log(d.toString());
+  });
