@@ -14,8 +14,15 @@ var a = $p(s)
   .on('data',function(d){
     console.log(d.toString());
     assert.equal('data: data: hello', d.toString('utf8'));
-  })
-  .first()
+  }).first()
+  .on('data', function(d){
+    console.log(d.toString());
+  });
+  
+var b = $p([s,'node test2.js','node test2.js']).on('data',function(d){
+    console.log(d.toString());
+    assert.equal('data: data: hello', d.toString('utf8'));
+  }).first()
   .on('data', function(d){
     console.log(d.toString());
   });
