@@ -7,16 +7,14 @@
     "spawn",
     "pipe"
   ],
-  "version": "0.0.5",
+  "version": "0.0.6",
   "repository": {
     "type": "git",
     "url": "git@github.com:DeadAlready/node-easy-pipe"
   },
   "main": "index.js",
   "dependencies": {},
-  "devDependencies":{
-    "vows":"0.6.x"
-  },
+  "devDependencies":{},
   "scripts":{
     "test":"node test/test.js"
   },

@@ -53,7 +53,7 @@ of current PipeStream object will be Piped to the new. The new PipeStream will b
 making the process chainable.
 
     var fs = require('fs');
-    var pipeLine = $(fs.createReadStream('/var/log.txt'))
+    var pipeLine = $p(fs.createReadStream('/var/log.txt'))
                     .pipe('gzip')
                     .pipe(fs.createWriteStream('/var/log.gz'));
 
